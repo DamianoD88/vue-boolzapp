@@ -22,12 +22,10 @@ body {
 .col-sx{
     height: 700px;
     width: 30%;
-    background-color: #ffffff;
+    background-color: lightblue;
 }
 
-.head-sx{
-    height: 10%;
-}
+
 
 .nav-sx {
     display: flex;
@@ -45,7 +43,7 @@ body {
     display: flex;
     list-style-type: none;
     overflow: hidden;
-    width: 40%;
+    width: 50%;
 }
 
 
@@ -61,10 +59,13 @@ li, .icona {
     padding-top: 3px;
     padding-left: 5px;
     margin-right: 12%;
+    margin-bottom: 10px;
 }
 
 .icons-dx, i {
-    font-size: 30px;
+    font-size: 27px;
+    padding: 5px;
+    margin: 5px;
     color: #b1b1b1;
 }
 
@@ -84,4 +85,77 @@ li, .icona {
     border-radius: 50%;
 }
 
-  
+.title1 {
+    display: flex;
+    justify-content: start;
+    font-weight: bold;
+}
+
+.sub-title1 {
+    display: flex;
+    color: grey;
+    text-decoration: underline;
+}
+
+/* ricerca */
+
+.cerca {
+    display: flex;
+    justify-content: start;
+    height: 60px;
+    width: 100%;
+}
+
+.button {
+    background-color: white;
+    cursor: pointer;
+    padding: 1px;
+    margin-left: 3px;
+    margin-bottom: 10px;
+    margin-right: 1px;
+    border: none;
+    vertical-align: top;
+}
+
+#search-icon {
+    width: 50%;
+}
+
+#chat {
+    color: lightgrey;
+    width: 85%;
+    height: 81%;
+    border: none;
+    background-color: whitesmoke;
+}
+
+/* end ricerca */
+
+/* chat  */
+
+.mex {
+    display: flex;
+    justify-content: start;
+    background-color: #f5f5f5;
+    padding: 3px;
+    margin: 1px;
+}
+
+.messaggi {
+    display: flex;
+    align-items: center;      
+    border-radius: 50%;
+    width: 18%;
+    padding-top: 3px;
+    padding-left: 5px;
+    margin-right: 12%;
+    margin-bottom: 10px;
+}
+
+.title2 {
+    margin-top: 30px;
+}
+
+
+
+/* end chat */
