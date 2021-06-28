@@ -44,6 +44,7 @@ body {
     list-style-type: none;
     overflow: hidden;
     width: 50%;
+    overflow-y: hidden;
 }
 
 
@@ -132,6 +133,10 @@ li, .icona {
 /* end ricerca */
 
 /* chat  */
+
+.chat-report {
+    overflow-y: scroll;
+}
 
 .mex {
     display: flex;
