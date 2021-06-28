@@ -9,3 +9,11 @@ body {
     background-image: url("../img/sfondo.jpg");
 
 }
+
+.container{
+    height: 700px;
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: red;
+}
