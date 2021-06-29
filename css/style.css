@@ -16,7 +16,6 @@ body {
     width: 75%;
     margin: auto;
     margin-top: 20px;
-    background-color: red;
     display: flex;
     justify-content: start;
 }
@@ -159,10 +158,10 @@ li, .icona {
 }
 
 .title2 {
-    margin-top: 42px;
+
     font: bold;
-    position: absolute;
-    margin-left: 20px;
+
+ 
 }
 
 /* end chat */
@@ -171,14 +170,17 @@ li, .icona {
 
 .col-dx {
     width: 100%;
-    height: 45px;
+    height: 700px;
 
 }
 
 .mex-dx {
+    display: flex;
+    align-items: center;
     background-color: #eaeaea;
     height: 98px;
     position: relative;
+    justify-content: space-between;
 }
 
 #meme-mex {
@@ -188,7 +190,7 @@ li, .icona {
 }
 
 .sfondo-app {
-    height: 900%;
+    height: 602px;
     width: 100%;
     background-image: url("../img/mine.jpg");
 
