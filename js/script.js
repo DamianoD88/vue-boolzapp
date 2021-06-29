@@ -1,7 +1,7 @@
 const app = new Vue({
     el: '#app',
     data: {
-      count:0,
+      count:'',
       contacts: [
         {
             name: 'Michele',
@@ -95,7 +95,18 @@ const app = new Vue({
             ]
  
         },
+        
       ]
+    },
+    methods: {
+        addChat(){
+            this.messages.push(this.count);
+            this.count = '';
+        },
+        removeChat(indice){
+            this.messages.splice(indice,1)
+        }
+       
     }
    
   })
