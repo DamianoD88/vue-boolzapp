@@ -147,11 +147,21 @@ li, .icona {
     margin: 1px;
 }
 
-.messaggi {
+.contact {
     display: flex;
     align-items: center;      
     border-radius: 50%;
     width: 18%;
+    padding-top: 3px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    width: 60px;
     padding-top: 3px;
     padding-left: 5px;
     margin-bottom: 10px;

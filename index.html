@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -22,7 +23,7 @@
                     </ul>
                     <ul class="parte-dx">
                         <li class="icons-dx"><a href="#cicle"><i class="fas fa-circle-notch"></i></a></li>
-                        <li class="icons-dx"><a href="#cicle"><i class="fas fa-comment-alt"></i></i></a></li>
+                        <li class="icons-dx"><a href="#cicle"><i class="fas fa-comment-alt"></i></a></li>
                         <li class="icons-dx"><a href="#cicle"><i class="fas fa-ellipsis-v"></i></a></li>
                     </ul>
                 </div>
@@ -43,14 +44,45 @@
             <!-- end spunta di ricezione -->
 
             <!-- ricerca -->
+
+
             <div class="cerca">
                 <button class="button"><i id="search-icon" class="fas fa-search"></i></button>
                 <input type="text" name="Cerca o inserisci una chat" id="chat" placeholder="Cerca o inserisci una chat">
             </div>
+
+            <div v-for="contact in contacts" class="mex">
+                <img id="logo" class="messaggi" :src="'img/avatar' + contact.avatar + '.jpg'" :alt="contact.name">
+                <span class="title2">
+                     {{contact.name}}
+                </span>
+            </div>
+
+            <!-- <div class="contacts">
+                <div v-for="contact in contacts" class="contact">
+                    <div class="contact-logo">
+                        <img id="logo" :src="'img/avatar' + contact.avatar + '.jpg'" :alt="contact.name">
+                    </div>
+                    <div class="contact-info">
+                        <h3>
+                            <span class="contact-name">
+                                {{contact.name}}
+                            </span>
+                            <span class="time f-right"></span>
+                        </h3>
+                    </div>
+                </div>
+            </div> -->
+
+            
+
+
             <!-- end ricerca -->
 
             <!-- icone sotto -->
-            <div id="app" class="chat-report">
+
+
+            <!-- <div id="app" class="chat-report">
                 <div class="mex">
                     <img class="messaggi" src="img/avatar_1.jpg" alt="">
                     <span class="title2">
@@ -75,8 +107,9 @@
                         Giulia
                     </span>
                 </div>
-            </div>
+            </div> -->
             
+
             <!-- end icone sotto -->  
 
         </aside>
