@@ -51,9 +51,11 @@
                 <input @click="addChat" type="text" name="Cerca o inserisci una chat" id="chat" placeholder="Cerca o inserisci una chat">
             </div>
 
-            <div v-for="contact in contacts" class="mex">
+            <!-- usare la direttiva v-for per eseguire il rendering di un elenco di elementi basato su un array, in questo caso contacts -->
+
+            <div v-for="(contact, index) in contacts" class="contact">
                 <img id="logo" class="messaggi" :src="'img/avatar' + contact.avatar + '.jpg'" :alt="contact.name">
-                <span class="title2">
+                <span class="title2"> {{index}}
                      {{contact.name}}
                 </span>
             </div>
