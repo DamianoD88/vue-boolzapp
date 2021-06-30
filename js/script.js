@@ -99,13 +99,11 @@ const app = new Vue({
       ]
     },
     methods: {
-        addChat(){
-            this.messages.push(this.count);
-            this.count = '';
+        setContactActive(indice){
+            this.ContactActive = indice;
+            console.log(this.ContactActive);
+            
         },
-        removeChat(indice){
-            this.messages.splice(indice,1)
-        }
        
     }
    

@@ -53,9 +53,9 @@
 
             <!-- usare la direttiva v-for per eseguire il rendering di un elenco di elementi basato su un array, in questo caso contacts -->
 
-            <div v-for="(contact, index) in contacts" class="contact">
+            <div v-for="(contact, index) in contacts" class="contact" @click="setContactActive(index)">
                 <img id="logo" class="messaggi" :src="'img/avatar' + contact.avatar + '.jpg'" :alt="contact.name">
-                <span class="title2"> {{index}}
+                <span class="title2"> 
                      {{contact.name}}
                 </span>
             </div>
