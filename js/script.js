@@ -100,8 +100,8 @@ const app = new Vue({
     },
     methods: {
         setContactActive(indice){
-            this.ContactActive = indice;
-            console.log(this.ContactActive);
+            this.contactActive = indice;
+            console.log(this.contactActive);
             
         },
        
