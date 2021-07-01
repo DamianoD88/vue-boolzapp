@@ -123,7 +123,7 @@
             <div class="mex-dx">
                 <div class="logo">
                     <img id="meme-mex" class="messaggi" :src="'img/avatar' + contacts[contactActive].avatar + '.jpg'" alt="">
-                    
+
                     <span class="name">
                         {{contacts[contactActive].name}} 
                     </span>
@@ -138,33 +138,28 @@
 
             </div>
             <div class="sfondo-app">
-               <div class="question">
-                   Messaggio Utente
+                <!-- il for va nei contatti attivi e prende tutta l'area dei messaggi uno alla volta lo butta nella variabile chiamata messages -->
+
+                <!-- v-bind mette lo stato del messaggio quando è ricevuti in answer -->
+               <div v-bind:class="{answer: message.status == 'received'}" class="question" v-for="message in contacts[contactActive].messages">
+                   {{message.text}} 
                     <div class="stato">
-                        attivo
+                        {{message.status}}
                     </div>
                     <div class="data">
-                        26.06.2021
+                        {{message.date}}
                     </div>
                </div>
-               <div class="answer">
-                    Messaggio di risposta
-                    <div class="stato">
-                        attivo
-                    </div>
-                    <div class="data">
-                        26.06.2021
-                    </div>
-               </div>
+               
             </div>
             <div class="footer-dx">
                    <a id="smile" href="#smile"><i class="far fa-smile"></i></a>
-                   <!-- <input type="search" name="text" id="chat-footer" placeholder="scrivi un messaggio" v-model="newMessage" @keyup.enter="sendMessage"> -->
+                   <input type="search" name="text" id="chat-footer" placeholder="scrivi un messaggio" v-model="newMessage" @keyup.enter="sendMessage"> 
                    <a class="microphone" href="#microphone"><i class="fas fa-microphone"></i></a>
             </div>
         </aside>
 
-        <!-- end colonna di destra -->
+        <!-- end colonna di destra  -->
 
     </div>
 

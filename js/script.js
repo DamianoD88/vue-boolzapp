@@ -33,17 +33,17 @@ const app = new Vue({
             messages: [
                 {
                     date: '10/01/2020 15:30:55',
-                    text: 'Hai portato a spasso il cane?',
-                    status: 'sent'
-                },
-                {
-                    date: '10/01/2020 15:50:55',
-                    text: 'Ha magnato??',
+                    text: 'Sei poi andato a correre?',
                     status: 'sent'
                 },
                 {
                     date: '10/01/2020 16:50:55',
-                    text: 'sta bello satollo!',
+                    text: 'li vicino??',
+                    status: 'sent'
+                },
+                {
+                    date: '10/01/2020 19:50:55',
+                    text: 'nun ce riesco.. so troppo ciccio!!',
                     status: 'received'
                 },
             ]
