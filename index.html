@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -48,7 +49,7 @@
 
             <div class="cerca">
                 <button class="button"><i id="search-icon" class="fas fa-search"></i></button>
-                <input @click="addChat" type="text" name="Cerca o inserisci una chat" id="chat" placeholder="Cerca o inserisci una chat">
+                <input @click="" type="text" name="Cerca o inserisci una chat" id="chat" placeholder="Cerca o inserisci una chat">
             </div>
 
             <!-- usare la direttiva v-for per eseguire il rendering di un elenco di elementi basato su un array, in questo caso contacts -->
@@ -56,7 +57,7 @@
             <div v-for="(contact, index) in contacts" class="contact" @click="setContactActive(index)">
                 <img id="logo" class="messaggi" :src="'img/avatar' + contact.avatar + '.jpg'" :alt="contact.name">
                 <span class="title2"> 
-                     {{contact.name}}
+                     {{contact.name}} 
                 </span>
             </div>
 
@@ -116,14 +117,15 @@
 
         </aside>
 
-        <!-- colonna di destra -->
+        <!-- colonna di destra -->      
 
         <aside class="col-dx">
             <div class="mex-dx">
                 <div class="logo">
-                    <img id="meme-mex" class="messaggi" src="img/avatar_2.jpg" alt="">
+                    <img id="meme-mex" class="messaggi" :src="'img/avatar' + contacts[contactActive].avatar + '.jpg'" alt="">
+                    
                     <span class="name">
-                        Domenico
+                        {{contacts[contactActive].name}} 
                     </span>
                     
                 </div>
@@ -157,7 +159,7 @@
             </div>
             <div class="footer-dx">
                    <a id="smile" href="#smile"><i class="far fa-smile"></i></a>
-                   <input type="search" name="text" id="chat-footer" placeholder="scrivi un messaggio">
+                   <!-- <input type="search" name="text" id="chat-footer" placeholder="scrivi un messaggio" v-model="newMessage" @keyup.enter="sendMessage"> -->
                    <a class="microphone" href="#microphone"><i class="fas fa-microphone"></i></a>
             </div>
         </aside>

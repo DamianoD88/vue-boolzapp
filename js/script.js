@@ -104,6 +104,29 @@ const app = new Vue({
             console.log(this.contactActive);
             
         },
+        // SendMessage(){
+        //     console.log(this.newMessage);
+        //     const newMess = {
+        //         date: dayjs().format("DD/MM/YYYY HH:mm:ss"),
+        //         message: this.newMessage,
+        //         status: 'sent'
+        //     };
+        //     console.log(newMess);
+        //     this.contacts[this.contactActive].messages.push(newMess);
+        //     console.log(this.contacts[this.contactActive].messages);
+
+        //     this.newMessage = '';
+
+
+        //     setTimeout(()=> {
+        //         const newRisposta = {
+        //             date: dayjs().format("DD/MM/YYYY HH:mm:ss"),
+        //             message: 'ok',
+        //             status: 'received'
+        //         };
+        //         this.contacts[this.contactActive].messages.push(newRisposta);
+        //     },1000);
+        // }
        
     }
    
